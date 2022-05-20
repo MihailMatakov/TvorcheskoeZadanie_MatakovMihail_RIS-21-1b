@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"> property color menuBackgroundColor: &quot;#3C3C3C&quot;;
+    property color menuBorderColor: &quot;#282828&quot;;
+	background-color :rgb(50, 54, 72);
+    color::white;
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QFrame" name="frame_3">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	border:1px  solid black;
+	border-radius: 10px;
+	color: white;
+	background-color : #00ADB5;
+	
+
+	font : 20px;
+font-style : bold;
+width : 100px;
+}
+
+QPushButton#pushButton_2:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QPushButton#pushButton_2:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+         </property>
+         <property name="text">
+          <string>Ануитентный</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	border:1px  solid black;
+	border-radius: 10px;
+	color: white;
+	background-color : #00ADB5;
+	
+
+	font : 20px;
+font-style : bold;
+width : 100px;
+}
+
+QPushButton#pushButton_2:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QPushButton#pushButton_2:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+         </property>
+         <property name="text">
+          <string>Дифференциальный</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QFrame" name="frame">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;</string>
+           </property>
+           <property name="text">
+            <string>Сумма кредита</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="input1">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+
+QLineEdit#input1:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QLineEdit#input1:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Процентная ставка</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="input2">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+
+
+QLineEdit#input2:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QLineEdit#input2:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Срок выплаты, месяц</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="input3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+
+
+	
+
+QLineEdit#input3:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QLineEdit#input3:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Ежемесячный платёж</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="output">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">Color: white;</string>
+           </property>
+           <property name="text">
+            <string>Сумма переплаты</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="output1">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Общая выплата кредита</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="output2">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_5">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	border:1px  solid black;
+	border-radius: 10px;
+	color: white;
+	background-color : #00ADB5;
+	
+
+	font : 20px;
+font-style : bold;
+width : 100px;
+}
+
+QPushButton#pushButton_2:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QPushButton#pushButton_2:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+           <property name="text">
+            <string>Считать</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	border:1px  solid black;
+	border-radius: 10px;
+	color: white;
+	background-color : #00ADB5;
+	
+
+	font : 20px;
+font-style : bold;
+width : 100px;
+}
+
+QPushButton#pushButton:hover {
+    background-color: rgb(255, 237, 215); 
+}
+QPushButton#pushButton:pressed {
+    background-color: rgb(255, 224, 185);
+}</string>
+           </property>
+           <property name="text">
+            <string>Очистить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QFrame" name="frame_4">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: white;</string>
+           </property>
+           <property name="text">
+            <string>Сумма кредита</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="input1_">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+
+QLineEdit#input1:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QLineEdit#input1:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Процентная ставка</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="input2_">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+
+
+QLineEdit#input2:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QLineEdit#input2:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Срок выплаты, месяц</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="input3_">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+
+
+	
+
+QLineEdit#input3:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QLineEdit#input3:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Разница между ежемесячными выплатами</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="output_">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}
+</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">Color: white;</string>
+           </property>
+           <property name="text">
+            <string>Сумма переплаты</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="output1_">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;</string>
+           </property>
+           <property name="text">
+            <string>Общая выплата кредита</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="output2_">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit
+{
+border: 2px;
+border-style: solid;
+border-color: #00ADB5;
+border-radius: 15px;
+color: rgb(255, 255, 255);
+background-color : transparent;
+font : 15px;
+font-style : bold;
+min-height: 35px;
+}</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	border:1px  solid black;
+	border-radius: 10px;
+	color: white;
+	background-color : #00ADB5;
+	
+
+	font : 20px;
+font-style : bold;
+width : 100px;
+}
+
+QPushButton#pushButton_2:hover {
+    background-color: rgb(199, 255, 147); 
+}
+QPushButton#pushButton_2:pressed {
+    background-color: rgb(199, 255, 178);
+}</string>
+           </property>
+           <property name="text">
+            <string>Считать</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	border:1px  solid black;
+	border-radius: 10px;
+	color: white;
+	background-color : #00ADB5;
+	
+
+	font : 20px;
+font-style : bold;
+width : 100px;
+}
+
+QPushButton#pushButton:hover {
+    background-color: rgb(255, 237, 215); 
+}
+QPushButton#pushButton:pressed {
+    background-color: rgb(255, 224, 185);
+}</string>
+           </property>
+           <property name="text">
+            <string>Очистить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
